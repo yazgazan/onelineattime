@@ -1,10 +1,15 @@
 
 NAME=		1lineattime
 
-SRCS=		main.c
+SRCS=		main.c			\
+		srcs/1lineattime.c	\
+		srcs/io.c		\
+		srcs/opts.c		\
+		srcs/terminal.c
+
 OBJS=		$(SRCS:.c=.o)
 
-CFLAGS=		-W -Wall -Wextra -Wshadow
+CFLAGS=		-W -Wall -Wextra -Wshadow -I ./includes
 LDFLAGS=	-ltermcap
 CC=		gcc
 RM=		rm -rvf
@@ -15,10 +20,10 @@ all:	$(OBJS)
 	$(CC) -o $(NAME) $(CFLAGS) $(OBJS) $(LDFLAGS)
 
 clean:
-	$(RM) $(OBJS)
+	@$(RM) $(OBJS)
 
 fclean:	clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re:	fclean all
 
