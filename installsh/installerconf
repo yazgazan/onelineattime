@@ -1,0 +1,6 @@
+
+infile  installer.sh.in
+outfile 1lineattime-installer.sh
+
+file 1lineattime  bin 1lineattime
+
