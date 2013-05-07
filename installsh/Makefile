@@ -13,7 +13,7 @@ CFLAGS=		--pedantic --ansi -W -Wall -Wextra -Wshadow -Werror -O3
 LDFLAGS=	-ltermcap
 CC=		gcc
 RM=		rm -rvf
-EMBEDER=	embeder
+EMBEDER=	./embeder.sh
 EMBEDCONF=	installerconf
 EMBEDTARGET=	1lineattime-installer.sh
 
