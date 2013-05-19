@@ -1,6 +1,7 @@
 
-infile  installer.sh.in
-outfile 1lineattime-installer.sh
+output          1lineattime-installer.sh
+preinstall      pre-install.sh
+defaultprefix   /usr/local
 
-file 1lineattime  bin 1lineattime
+file 1lineattime  bin bin/1lineattime
 
