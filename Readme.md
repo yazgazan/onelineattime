@@ -52,3 +52,12 @@ options :
     -H, --head  <n>   :  the first n lines won't be wrapped.
 ```
 
+## Build & Install
+
+```shell
+git clone "https://github.com/yazgazan/onelineattime.git"
+cd onelineattime
+./configure
+make && make install
+```
+
