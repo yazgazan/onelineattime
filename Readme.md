@@ -7,7 +7,7 @@ OneLineAtTime is a command line tool written in c that wrap lines.
 
 When you download a file with axel, you get something like this :
 
-```shell
+```bash
 $ axel "http://url.to.download/file"
 Initializing download
 File size: 727832574 bytes
@@ -29,8 +29,8 @@ Downloaded 694.1 megabytes in 38 seconds. (18450.97 KB/s)
 $ 
 ```
 
-With oneLineAtTime, the progress bar scroll without polluting your term :
-```shell
+Using oneLineAtTime, the progress bar scrolls without polluting your term :
+```bash
 $ axel "http://url.to.download/file" | 1lineattime -H 5 --regex "^\[.+%\]"
 Initializing download
 File size: 727832574 bytes
@@ -54,7 +54,7 @@ options :
 
 ## Build & Install
 
-```shell
+```Bash
 git clone "https://github.com/yazgazan/onelineattime.git"
 cd onelineattime
 ./configure
